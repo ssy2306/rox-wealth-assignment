@@ -6,3 +6,12 @@ setps to follow to setup the backend server:
 2. Open the repository in any text editor
 3. cd server
 4. On the terminal type : 'npm i'
+5. Then after downloading all the necessary modules, in terminal type: 'npx nodemon index.js' or 'npm start'
+6. You'll see : "Server started at port 3000"
+
+Steps to follow to setup the frontend :
+1. clone the repo
+2. Open the repo
+3. cd Epicurean Symphony
+On the terminal type : 'npm i'
+5. Then after downloading all the necessary modules, in terminal type: 'npm run dev' or 'npm start'
