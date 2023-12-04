@@ -10,6 +10,8 @@ setps to follow to setup the backend server:
 6. You'll see : "Server started at port 3000"
 
 The sample JSON data is now ready to GET at "HTTP://localhost:3000/data"
+You'll be able to see a website like this 
+![image](https://github.com/ssy2306/rox-wealth-assignment/assets/77876285/3ee92017-cd96-4a9a-bdfd-7de706846911)
 
 -----------------------------------------------------
 Steps to follow to setup the frontend :
