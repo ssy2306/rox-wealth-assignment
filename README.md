@@ -6,7 +6,7 @@ Make sure you have Node.js in your system else install from "HTTP://node.js.org/
 setps to follow to setup the backend server:
 1. clone the repository
 2. Open the repository in any text editor, if the folder is ZIP then unzip it
-3. cd server
+3. on terminal type : cd "Epicurean Symphony"
 4. On the terminal type : 'npm i'
 5. Then after downloading all the necessary modules, in terminal type: 'npx nodemon index.js' or 'npm start'
 6. You'll see : "Server started at port 3000"
