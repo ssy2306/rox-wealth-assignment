@@ -1,6 +1,8 @@
 # rox-wealth-assignment
  
-The Folder Server contains the backend code to setup the backend, 
+The Folder Server contains the backend code to setup the backend,  
+
+Make sure you have Node.js in your system else install from "HTTP://node.js.org/en/download/"
 setps to follow to setup the backend server:
 1. clone the repository
 2. Open the repository in any text editor, if the folder is ZIP then unzip it
