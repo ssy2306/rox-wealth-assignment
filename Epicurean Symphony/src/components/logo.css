@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Parisienne&family=Work+Sans:wght@300&display=swap');
+
+body .first{
+    /* background: linear-gradient(320deg, white, white, #ffe8bd); */
+    background: '';
+}
+
+.logoName {
+    color:  #DFBD69;
+    -webkit-background-clip: text; /* Clip the background to the text */
+    background-clip: text;
+    font-family: 'Parisienne', 'Work Sans', cursive;
+    background: no-repeat;
+}
