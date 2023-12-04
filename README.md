@@ -3,7 +3,7 @@
 The Folder Server contains the backend code to setup the backend, 
 setps to follow to setup the backend server:
 1. clone the repository
-2. Open the repository in any text editor
+2. Open the repository in any text editor, if the folder is ZIP then unzip it
 3. cd server
 4. On the terminal type : 'npm i'
 5. Then after downloading all the necessary modules, in terminal type: 'npx nodemon index.js' or 'npm start'
