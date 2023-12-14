@@ -28,7 +28,7 @@ function HomePage() {
         };
 
         fetchData();
-    }, []); // Run the effect only once when the component mounts
+    }, []);
 
     const renderDishes = (dishes) => {
         return dishes.map((dish, index) => (
@@ -49,7 +49,7 @@ function HomePage() {
                         Price: {dish.price}
                         <br />
                         Description: {dish.description}
-                    </Box>
+                    </Box> 
                 </CardContent>
             </Card>
         ));
@@ -58,8 +58,8 @@ function HomePage() {
     // SustainabilityInitiativeCard component
     const SustainabilityInitiativeCard = ({ initiative }) => (
         <Card sx={{ maxWidth: 345, margin: '20px', borderRadius: 0, boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)' }}>
-            <CardContent sx={{ background: 'linear-gradient(#DFBD69, #141414)' }}>
-                <Box sx={{ fontWeight: 'bold' }}>
+            <CardContent sx={{ background: 'linear-gradient(#222222, #111111)' }}>
+                <Box sx={{ fontWeight: 'bold', color: 'white' }}>
                     {initiative.name}
                 </Box>
                 <Box sx={{ color: 'white' }}>
@@ -72,19 +72,44 @@ function HomePage() {
     const AwardsCard = ({ award }) => {
         return (
             <Card sx={{ maxWidth: 345, margin: '20px', borderRadius: 0, boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)' }}>
-                <CardContent sx={{ background: 'linear-gradient(#000000, #111111)' }}>
-                    <Box variant="h6" sx={{ color: '#DFBD69', fontWeight: 'bold' }}>
+                <CardContent sx={{ background: 'linear-gradient( 90deg, #111111, #DFBD69, #111111)' }}>
+                    <Box variant="h6" sx={{ color: 'black', fontWeight: 'bold' }}>
                         {award.year}
                     </Box>
-                    <Box variant="subtitle1" sx={{ color: 'grey' }}>
+                    <Box variant="subtitle1" sx={{ color: 'black',}}>
                         {award.organization}
                     </Box>
-                    <Box variant="body2" sx={{ color: 'white' }}>
+                    <Box variant="body2" sx={{ color: 'white', fontWeight: '' }}>
                         {award.award}
                     </Box>
                 </CardContent>
             </Card>
         );
+    };
+//menu
+    const rendermenu = (dishes) => {
+        return dishes.map((dish, index) => (
+            <Card key={index} sx={{ maxWidth: 345, margin: '20px', borderRadius: 0, boxShadow: '0 4px 8px rgba(124,76, 90, 0.5)' }}>
+                <CardMedia
+                    component="img"
+                    height="140"
+                    image={`https://img.freepik.com/premium-photo/assorted-traditional-indian-food-dark-stone-background-frame-indian-dish-chicken-tikka-masala-palak-paneer-saffron-rice-lentil-soup-pita-bread-spices-top-view-flat-laycopy-space_410516-2172.jpg?w=2000`}
+                    alt={dish.name}
+                />
+                <CardContent sx={{ backgroundColor: '#111111' }}>
+                    <Box sx={{ fontSize: 20, color: '#DFBD69', fontWeight: 'bold', }}>
+                        {dish.name}
+                    </Box>
+                    <Box sx={{ fontSize: 14, color: 'grey', }}>
+                        Rating: {dish.rating}
+                        <br />
+                        Price: {dish.price}
+                        <br />
+                        Description: {dish.description}
+                    </Box> 
+                </CardContent>
+            </Card>
+        ));
     };
 
     if (!data) {
@@ -187,6 +212,19 @@ function HomePage() {
                         </Box>
                     </Box>
                 </Box>
+                <Box sx={{backgroundColor: '#111111', paddingTop: 5}}>
+                <Box className="logoName" sx={{  flexWrap: 'wrap', justifyContent: 'left', fontSize: 40 }}>
+                            - Menu -
+                        </Box>
+                        <Box sx={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', }}>
+                        
+                       
+                            {rendermenu(data.message.restaurant.menu.categories[0].items)}
+
+                            {rendermenu(data.message.restaurant.menu.categories[2].items)}
+                        </Box>
+                        
+                 </Box>
 
             </Box>
             {/* <Maps /> 
@@ -195,7 +233,7 @@ function HomePage() {
             paid service
             */}
 
-            {data && (<Box className="footer" sx={{ padding: 8, display: 'flex', backgroundColor: '#111111', color: '#DFBD69' }}>
+            {data && (<Box className="footer" sx={{ padding: 8, display: 'flex', backgroundColor: '#000000', color: '#DFBD69' }}>
 
                 <Box sx={{ width: '50%' }}>
 

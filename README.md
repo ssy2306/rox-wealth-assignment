@@ -4,6 +4,7 @@ Epicurean Symphony is a full-stack web application that showcases a delightful r
 
 Backend Setup:
 Make sure you have Node.js installed on your system. If not, download it from http://node.js.org/en/download/.
+and firstly setup the backend server then start the frontend
 
 Setting up the Backend Server:
 1. Clone the repository.
