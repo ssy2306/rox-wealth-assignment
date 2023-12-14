@@ -6,6 +6,10 @@ Backend Setup:
 Make sure you have Node.js installed on your system. If not, download it from http://node.js.org/en/download/.
 and firstly setup the backend server then start the frontend
 
+
+https://github.com/ssy2306/rox-wealth-assignment/assets/77876285/dce198e7-e7d7-415b-bba4-9cbe507fed9e
+
+
 Setting up the Backend Server:
 1. Clone the repository.
 2. Open the repository in any text editor. If the folder is a ZIP file, unzip it.
@@ -14,6 +18,8 @@ Setting up the Backend Server:
 4. After downloading all the necessary modules, start the server by running either npx nodemon index.js or npm start.
 5. You should see the message "Server started at port 3000".
 The sample JSON data is now accessible at http://localhost:3000/data.
+
+
 
 Frontend Setup:
 1. Setting up the Frontend:
